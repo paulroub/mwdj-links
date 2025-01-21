@@ -1,0 +1,55 @@
+title: Linky Template
+subheads:
+    - "Catchy little tagline (one or more)"
+
+email: email@example.com
+description: >-
+    A brief description of your site
+baseurl: ""
+url: "https://example.com/"
+
+# uncomment and fill in any social IDs you want linked from the top of your page
+
+# email: "email@example.com"
+# tiktok_username: "my_tiktok_username"
+# github_username: "my_github_username"
+# instagram_username: "my_instagram_username"
+# threads_username: "my_threads_username"
+# pinterest_username: "my_pinterest_username"
+# mastodon_username: "@username@example.host"
+# cashapp_username: "my_cashapp_username"
+# venmo_username: "my_venmo_username"
+# bluesky_username: "my_bluesky_username"
+# telephone_number: "999-999-9999"
+
+# uncomment for plausible.io analytics, should match the "url" above
+# plausible_io: example.com
+
+# uncomment to add your google analytics
+# google_analytics: UA-NNNNNNNN-N
+
+# Build settings
+theme: jekyll-theme-linky
+plugins:
+    - jekyll-feed
+
+exclude:
+    - VERSION
+    - bin
+    - linky.gemspec
+    - netlify.toml
+    - scripts
+
+linky:
+    body_background: "#030303"
+    body_foreground: "#F0F0F0"
+    button_background: "#f16293"
+    social_button_color: "#ffffff"
+
+collections:
+    - links
+
+# tell the jekyll-feed plugin to include the links collection
+feed:
+    collections:
+        - links

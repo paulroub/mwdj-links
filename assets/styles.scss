@@ -1,0 +1,10 @@
+---
+---
+
+@use "linky" with (
+  $linky_body_background: {{ site.linky.body_background | default: "#fa0616" }},
+  $linky_body_foreground: {{ site.linky.body_foreground | default: "#f0f0f0" }},
+  $linky_button_background: {{ site.linky.button_background | default: "#f16293" }},
+  $linky_button_foreground: {{ site.linky.button_foreground | default: "#f0f0f0" }},
+  $linky_social_button_color: {{ site.linky.social_button_color | default: "#fff" }}
+);

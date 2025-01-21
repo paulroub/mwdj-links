@@ -1,0 +1,21 @@
+{% comment %}
+  Add any extra head information here, e.g. your own favicons. None of the content below is required for your own site.
+
+  1. Head over to https://realfavicongenerator.net/ to add your own favicons.
+  2. Add _includes/custom-head.html in your source directory and insert the given code snippet.
+{% endcomment %}
+
+<link rel="icon" href="/favicon.ico" sizes="any">
+<link rel="icon" href="/linky.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+
+<meta property="og:image" content="https://linky.roub.net/images/linky-home.png" />
+
+{% comment %}
+  Show only the Atom feed for our links, since that's all *this* site uses. If you were also using a feed for blog posts,
+  you could just use the feed_meta tag to reference both feeds.
+
+  jekyll-feed does not currently have a way to combine the two.
+{% endcomment %}
+
+<link rel="alternate" type="application/atom+xml" title="Atom Feed for {{ site.title }}" href="{{ "/feed/links.xml" | relative_url }}" />

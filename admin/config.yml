@@ -1,0 +1,44 @@
+backend:
+    name: git-gateway
+    branch: main # Branch to update (optional; defaults to master)
+
+media_folder: images
+
+collections:
+    - name: "links"
+      label: "Links"
+      folder: "_links"
+      extension: "md"
+      format: "yaml-frontmatter"
+      create: true
+      slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+      fields: # The fields for each document, usually in front matter
+          - {
+                label: "Title",
+                name: "title",
+                widget: "string",
+                description: "One sentence or title, preferably short.",
+            }
+          - { label: "Link", name: "link", widget: "string" }
+          - {
+                label: "Image",
+                name: "image",
+                widget: "image",
+                description: "This will be displayed at a fairly small size, and cropped to fit in a circle. A square or circular image will work best.",
+                required: false,
+            }
+          - {
+                label: "Priority",
+                name: "priority",
+                widget: "number",
+                default: 5,
+            }
+          - {
+                label: "Expiration Date",
+                name: "expires",
+                widget: "datetime",
+                required: false,
+                date_format: "YYYY-MM-DD",
+                description: "Don't show this link after this date. Note that this requires the site to be re-deployed, it won't just drop off on its own.",
+            }
+      sortable_fields: ["priority", "title"]
