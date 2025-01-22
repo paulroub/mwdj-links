@@ -4,9 +4,9 @@ subheads:
     - "We fight as one because we are one."
 
 email: false
-description: "test"
+description: "This site is built with the collective in mind. We fight as one because we are one."
 baseurl: ""
-url: "https://example.com/"
+url: "https://activistcollective.org/"
 
 header_image: "/images/cover.webp"
 
