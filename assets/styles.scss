@@ -34,9 +34,19 @@ header {
 
 .ytshort {
   width: 90%;
-  margin: 1em auto;
+  margin: 0 auto 1em;
   max-height: 80vh;
   max-width: 720px;
   aspect-ratio: 9 / 16;
   display: block;
+}
+
+.welcome-heading {
+  width: 90%;
+  max-width: 720px;
+  margin: 0 auto;
+  text-align: center;
+  color: {{ site.linky.body_background }};
+  background-color: {{ site.linky.body_foreground }};
+  padding: 1em;
 }
