@@ -1,12 +1,14 @@
-title: Linky Template
+title: Activist Collective
 subheads:
-    - "Catchy little tagline (one or more)"
+    - "This site is built with the collective in mind."
+    - "We fight as one because we are one."
 
-#email: email@example.com
-description: >-
-    A brief description of your site
+email: false
+description: "test"
 baseurl: ""
 url: "https://example.com/"
+
+header_image: "/images/cover.webp"
 
 # uncomment and fill in any social IDs you want linked from the top of your page
 
@@ -21,6 +23,7 @@ instagram_username: "mommawearsdadjeans"
 # venmo_username: "my_venmo_username"
 bluesky_username: "jesstok.bsky.social"
 # telephone_number: "999-999-9999"
+discord_username: "HuRCMc5f"
 youtube_username: "momma_wears_dad_jeans1"
 
 # uncomment for plausible.io analytics, should match the "url" above
