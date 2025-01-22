@@ -45,7 +45,7 @@ exclude:
     - scripts
 
 linky:
-    body_background: "#F0F0F0"
+    body_background: "#929292"
     body_foreground: "#000"
     button_background: "#44e660"
     button_foreground: "#000"

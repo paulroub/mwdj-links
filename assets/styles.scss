@@ -8,3 +8,26 @@
   $linky_button_foreground: {{ site.linky.button_foreground | default: "#f0f0f0" }},
   $linky_social_button_color: {{ site.linky.social_button_color | default: "#fff" }}
 );
+
+$page-opacity: 0.95;
+
+body, html {
+  margin: 0;
+}
+
+body {
+  background-image: url('/images/rbg.png');
+
+  @supports (background-image: url('/images/rbg.webp')) {
+    background-image: url('/images/rbg.webp');
+  }
+}
+
+header {
+  opacity: $page-opacity;
+}
+.wrapper {
+  background-color: {{ site.linky.body_background | default: "#fa0616" }};
+  padding-bottom: 1em;
+  opacity: $page-opacity;
+}
