@@ -31,3 +31,12 @@ header {
   padding-bottom: 1em;
   opacity: $page-opacity;
 }
+
+.ytshort {
+  width: 90%;
+  margin: 1em auto;
+  max-height: 80vh;
+  max-width: 720px;
+  aspect-ratio: 9 / 16;
+  display: block;
+}
